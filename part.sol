@@ -25,3 +25,5 @@ function tokenURI(uint256 tokenId) override public view returns (string memory) 
     parts[11] = getRarity(tokenId);
 
     parts[12] = '</text><text x="10" y="140" class="base">';
+
+    string memory output = string(abi.encodePacked(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7], parts[8], parts[9], parts[10], parts[11], parts[12]));
